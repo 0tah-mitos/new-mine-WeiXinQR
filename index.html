@@ -3,15 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>😀我的分享页面</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>新挖矿微信二维码 - GitHub Pages</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
             text-align: center;
@@ -20,7 +13,7 @@
             color: #333;
             min-height: 100vh;
         }
-
+        
         .container {
             max-width: 600px;
             margin: 0 auto;
@@ -28,106 +21,94 @@
             flex-direction: column;
             gap: 30px;
         }
-
+        
         .card {
             background: white;
             border-radius: 20px;
             padding: 40px 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
+        
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
         }
-
+        
         h1 {
-            color: #07c160;
+            color: #07c160; /* 微信绿 */
             font-size: 2.5rem;
             margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
-
-        h1 i {
-            font-size: 2rem;
+        
+        .emoji-text {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 10px;
         }
-
-        .subtitle {
+        
+        .description {
             color: #666;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             margin-bottom: 25px;
             line-height: 1.6;
         }
-
+        
         .qr-section {
             margin: 30px 0;
-            padding: 20px;
+            padding: 25px;
             background: linear-gradient(135deg, #f0f7ff 0%, #e6ffe6 100%);
             border-radius: 15px;
             border: 2px dashed #07c160;
-        }.qr-container {
+        }
+        
+        .qr-code {
             width: 200px;
             height: 200px;
             margin: 0 auto;
-            background: #f8f8f8;
+            background: #07c160;
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
-            color: #07c160;
-            margin-bottom: 15px;
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 20px;
         }
-
-        .qr-text {
+        
+        .qr-label {
             color: #07c160;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
-
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 25px;
-        }
-
-        .link-btn {
+        
+        .github-link {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            padding: 12px 25px;background: linear-gradient(135deg, #07c160 0%, #06a85c 100%);
+            gap: 10px;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #07c160 0%, #06a85c 100%);
             color: white;
             border-radius: 25px;
             text-decoration: none;
             font-weight: bold;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(7, 193, 96, 0.2);
-        }
-
-       .link-btn:hover {
-            background: linear-gradient(135deg, #06a85c 0%, #058b4f 100%);
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(7, 193, 96, 0.3);
-        }
-
-        .stats {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
             margin-top: 20px;
-            color: #666;
         }
-
-        .stat-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }@media (max-width: 768px) {
+        
+        .github-link:hover {
+            background: linear-gradient(135deg, #06a85c 0%, #058b4f 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(7, 193, 96, 0.2);
+        }
+        
+        .footer {
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
             .container {
                 max-width: 100%;
             }
@@ -136,105 +117,43 @@
                 font-size: 2rem;
             }
             
-            .links {
-                flex-direction: column;
-            }
-            
-            .qr-container {
+            .qr-code {
                 width: 180px;
                 height: 180px;
+                font-size: 2.5rem;
             }
-        }
-
-        .footer {
-            margin-top: 40px;
-            color: #999;
-            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="card">
-            <h1>
-                <i class="fas fa-smile"></i>
-                😀😀😀😀我的分享页面
-            </h1>
+            <div class="emoji-text">😀😀😀😀</div>
+            <h1>测试成功</h1>
             
-            <div class="subtitle">
-                <p>这是通过老孙修改的页面，我编辑了他</p><p>欢迎来到我的 GitHub Pages 项目！</p>
-            </div>
-
+            <p class="description">
+                这是通过老孙修改的页面，我编辑了他<br>
+                GitHub Pages 部署成功！
+            </p>
+            
             <div class="qr-section">
-                <div class="qr-container">
-                    <!-- 二维码占位符 -->
-                    <div style="text-align: center;">
-                        <i class="fas fa-qrcode" style="font-size: 3rem; margin-bottom: 10px;"></i>
-                        <p>二维码生成区域</p>
-                    </div>
+                <div class="qr-code">
+                    QR
                 </div>
-                <p class="qr-text">微信扫码即可访问</p>
+                <p class="qr-label">微信扫码即可访问</p>
             </div>
-
-            <div class="links">
-                <a href="https://github.com/0tah-mitos" class="link-btn">
-                    <i class="fab fa-github"></i>
-                    GitHub主页
-                </a>
-                <a href="https://github.com/0tah-mitos/new-mine-WeiXinQR" class="link-btn">
-                    <i class="fasfa-code"></i>
-                    仓库源码
-                </a>
-                <a href="mailto:example@example.com" class="link-btn">
-                    <i class="fas fa-envelope"></i>
-                    联系我
-                </a>
-                <a href="#" class="link-btn">
-                    <i class="fas fa-share-alt"></i>
-                    分享页面
-                </a>
-            </div>
-
-            <div class="stats">
-                <div class="stat-item">
-                    <i class="fas fa-calendar"></i>
-                    创建时间：2025年
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-sync-alt"></i>
-                    实时更新
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-mobile-alt"></i>移动端适配
-                </div>
-            </div>
+            
+            <p>仓库地址：https://github.com/0tah-mitos/new-mine-WeiXinQR</p>
+            
+            <a href="https://github.com/0tah-mitos/new-mine-WeiXinQR" class="github-link">
+                查看 GitHub 仓库
+            </a>
         </div>
-
+        
         <div class="footer">
-           <p>Powered by GitHub Pages • Made with ❤️</p>
+            <p>Powered by GitHub Pages • Made with ❤️</p>
             <p>页面可实时编辑和更新</p>
         </div>
     </div>
-
-    <script>
-        // 简单的交互效果
-        document.addEventListener('DOMContentLoaded', function() {
-            // 二维码区域点击效果
-            const qrContainer = document.querySelector('.qr-container');
-            qrContainer.addEventListener('click', function() {
-                alert('点击二维码区域！可以在这里添加真实的二维码生成功能');
-            });
-
-            // 页面加载动画
-            const card = document.querySelector('.card');
-            card.style.opacity = 0;
-            setTimeout(() => {
-                card.style.transition = 'opacity 0.5s ease';
-                card.style.opacity =
-
-1;
-            }, 100);
-        });
-    </script>
 </body>
 </html>
