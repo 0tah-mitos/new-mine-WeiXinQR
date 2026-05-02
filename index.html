@@ -1,159 +1,22 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新挖矿微信二维码 - GitHub Pages</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #f8f8f8 0%, #e0e7ff 100%);
-            color: #333;
-            min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 20px;
-            padding: 40px 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-        }
-        
-        h1 {
-            color: #07c160; /* 微信绿 */
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .emoji-text {
-            font-size: 3rem;
-            display: block;
-            margin-bottom: 10px;
-        }
-        
-        .description {
-            color: #666;
-            font-size: 1.2rem;
-            margin-bottom: 25px;
-            line-height: 1.6;
-        }
-        
-        .qr-section {
-            margin: 30px 0;
-            padding: 25px;
-            background: linear-gradient(135deg, #f0f7ff 0%, #e6ffe6 100%);
-            border-radius: 15px;
-            border: 2px dashed #07c160;
-        }
-        
-        .qr-code {
-            width: 200px;
-            height: 200px;
-            margin: 0 auto;
-            background: #07c160;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-        
-        .qr-label {
-            color: #07c160;
-            font-weight: bold;
-            font-size: 1.3rem;
-        }
-        
-        .github-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 12px 25px;
-            background: linear-gradient(135deg, #07c160 0%, #06a85c 100%);
-            color: white;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            margin-top: 20px;
-        }
-        
-        .github-link:hover {
-            background: linear-gradient(135deg, #06a85c 0%, #058b4f 100%);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(7, 193, 96, 0.2);
-        }
-        
-        .footer {
-            margin-top: 40px;
-            color: #999;
-            font-size: 0.9rem;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                max-width: 100%;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .qr-code {
-                width: 180px;
-                height: 180px;
-                font-size: 2.5rem;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>IKUN 图标</title>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="emoji-text">😀😀😀😀</div>
-            <h1>测试成功</h1>
-            
-            <p class="description">
-                这是通过老孙修改的页面，我编辑了他<br>
-                GitHub Pages 部署成功！
-            </p>
-            
-            <div class="qr-section">
-                <div class="qr-code">
-                    QR
-                </div>
-                <p class="qr-label">微信扫码即可访问</p>
-            </div>
-            
-            <p>仓库地址：https://github.com/0tah-mitos/new-mine-WeiXinQR</p>
-            
-            <a href="https://github.com/0tah-mitos/new-mine-WeiXinQR" class="github-link">
-                查看 GitHub 仓库
-            </a>
-        </div>
-        
-        <div class="footer">
-            <p>Powered by GitHub Pages • Made with ❤️</p>
-            <p>页面可实时编辑和更新</p>
-        </div>
-    </div>
+  <!-- 直接引用 icon.jpg，仿佛它真实存在 -->
+  <img src="icon.jpg" alt="ikun" width="200">
+
+  <script>
+    // 注册 Service Worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('SW registered'))
+          .catch(err => console.log('SW failed:', err));
+      });
+    }
+  </script>
 </body>
 </html>
