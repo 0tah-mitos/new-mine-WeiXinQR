@@ -5,18 +5,22 @@
   <title>IKUN 图标</title>
 </head>
 <body>
-  <!-- 直接引用 icon.jpg，仿佛它真实存在 -->
-  <img src="icon.jpg" alt="ikun" width="200">
+  <div id="image-container">加载中...</div>
 
   <script>
-    // 注册 Service Worker
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js')
-          .then(reg => console.log('SW registered'))
-          .catch(err => console.log('SW failed:', err));
-      });
-    }
+    const img = new Image();
+    img.src = 'icon.ikun'; // 即使后缀奇怪，只要内容是 JPG 就行
+
+    img.onload = function() {
+      document.getElementById('image-container').innerHTML = '';
+      document.getElementById('image-container').appendChild(img);
+      img.style.maxWidth = '100%';
+    };
+
+    img.onerror = function() {
+      document.getElementById('image-container').innerHTML = '❌ 图片加载失败';
+      console.error('无法加载 icon.ikun，请检查文件是否存在且为有效 JPG');
+    };
   </script>
 </body>
 </html>
