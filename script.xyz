@@ -1,0 +1,3 @@
+// 这是一个 .xyz 文件
+console.log('Hello from .xyz file!');
+alert('格式欺骗：这个文件后缀是 .xyz，但内容是 JavaScript');
