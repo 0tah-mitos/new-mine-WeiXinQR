@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<head><title>Test ABC</title></head>
+<body>
+  <h1>这是一个 .abc 文件</h1>
+  <p>如果你的服务器配置了正确的 Content-Type，浏览器会下载它而不是直接显示</p>
+</body>
+</html>
