@@ -1,0 +1,12 @@
+# robots.txt for new-mine-WeiXinQR
+# 这是一个技术演示项目，随便爬 😄
+
+User-agent: *
+Allow: /
+
+# 告诉搜索引擎：这个项目的精髓是格式欺骗
+# 但搜索引擎可能看不懂 🤷
+Disallow: 
+
+# 站点地图（虽然我们没有）
+# Sitemap: https://0tah-mitos.github.io/new-mine-WeiXinQR/sitemap.xml
